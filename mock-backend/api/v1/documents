@@ -1,0 +1,18 @@
+[
+  {
+    "id": "doc-1",
+    "filename": "sample-policy.pdf",
+    "size": 2048576,
+    "upload_time": "2025-01-15T09:30:00Z",
+    "status": "processed",
+    "type": "pdf"
+  },
+  {
+    "id": "doc-2",
+    "filename": "technical-guide.docx",
+    "size": 1024000,
+    "upload_time": "2025-01-15T09:45:00Z",
+    "status": "processed", 
+    "type": "docx"
+  }
+]

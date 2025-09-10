@@ -1,0 +1,38 @@
+rag-ui/
+├── src/
+│   ├── app/                    # Next.js App Router
+│   │   ├── (dashboard)/        # Route groups
+│   │   │   ├── chat/
+│   │   │   ├── documents/
+│   │   │   └── settings/
+│   │   ├── api/                # API routes (proxy)
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   │
+│   ├── components/             # UI Components
+│   │   ├── ui/                 # Base UI components
+│   │   ├── feature/            # Feature-specific components
+│   │   ├── layout/             # Layout components
+│   │   └── providers/          # Context providers
+│   │
+│   ├── lib/                    # Utilities & Config
+│   │   ├── api/                # API layer
+│   │   ├── store/              # State management
+│   │   ├── hooks/              # Custom hooks
+│   │   ├── utils/              # Helper functions
+│   │   └── types/              # TypeScript types
+│   │
+│   ├── styles/                 # Styling
+│   │   ├── globals.css
+│   │   └── components.css
+│   │
+│   └── constants/              # App constants
+│       ├── routes.ts
+│       └── config.ts
+│
+├── public/                     # Static assets
+├── docs/                       # Documentation
+├── package.json
+├── tailwind.config.js
+└── tsconfig.json

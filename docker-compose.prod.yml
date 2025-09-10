@@ -1,0 +1,45 @@
+# Enhanced ChatUI Production Docker Compose
+version: '3.8'
+
+services:
+  enhanced-chatui:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: enhanced-chatui-prod
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+      - NEXT_TELEMETRY_DISABLED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000', (res) => { process.exit(res.statusCode === 200 ? 0 : 1) })"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.chatui-prod.rule=Host(`localhost`)"
+      - "traefik.http.services.chatui-prod.loadbalancer.server.port=3000"
+
+  # Optional: Mock backend for testing
+  mock-backend:
+    image: nginx:alpine
+    container_name: mock-backend-prod
+    ports:
+      - "8000:80"
+    volumes:
+      - ./mock-backend:/usr/share/nginx/html:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  default:
+    driver: bridge

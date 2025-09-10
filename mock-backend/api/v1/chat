@@ -1,0 +1,13 @@
+{
+  "id": "mock-response-123",
+  "content": "This is a mock response from the Docker containerized backend. Your enhanced ChatUI is working correctly with all the new features: Auto-suggestions, Quick Actions, Feedback System, Multi-language Support, and Export functionality!",
+  "role": "assistant",
+  "timestamp": "2025-01-15T10:00:00Z",
+  "conversation_id": "mock-conversation-456",
+  "sources": [
+    {
+      "filename": "mock-document.pdf",
+      "relevance_score": 0.95
+    }
+  ]
+}

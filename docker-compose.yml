@@ -1,0 +1,61 @@
+# Enhanced ChatUI Docker Compose Configuration
+version: '3.8'
+
+services:
+  enhanced-chatui:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: enhanced-chatui-dev
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+      - NEXT_TELEMETRY_DISABLED=1
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+      - ./package.json:/app/package.json
+      - ./next.config.js:/app/next.config.js
+      - ./tailwind.config.js:/app/tailwind.config.js
+      - ./tsconfig.json:/app/tsconfig.json
+      # Preserve node_modules and .next for performance
+      - chatui_node_modules:/app/node_modules
+      - chatui_next:/app/.next
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000', (res) => { process.exit(res.statusCode === 200 ? 0 : 1) })"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.chatui.rule=Host(`localhost`)"
+      - "traefik.http.services.chatui.loadbalancer.server.port=3000"
+
+  # Optional: Mock backend for testing (since real backend might not be available)
+  mock-backend:
+    image: nginx:alpine
+    container_name: mock-backend
+    ports:
+      - "8000:80"
+    volumes:
+      - ./mock-backend:/usr/share/nginx/html:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  chatui_node_modules:
+    driver: local
+  chatui_next:
+    driver: local
+
+networks:
+  default:
+    driver: bridge

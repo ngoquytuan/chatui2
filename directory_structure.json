@@ -1,0 +1,449 @@
+{
+    "root_path": "C:\\undertest\\ragX\\T2\\UI",
+    "content": {
+        "type": "directory",
+        "name": "UI",
+        "path": ".",
+        "children": [
+            {
+                "type": "directory",
+                "name": "backend",
+                "path": "backend",
+                "children": [
+                    {
+                        "type": "directory",
+                        "name": "logs",
+                        "path": "backend\\logs",
+                        "children": []
+                    },
+                    {
+                        "type": "directory",
+                        "name": "models",
+                        "path": "backend\\models",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "__init__.py",
+                                "path": "backend\\models\\__init__.py",
+                                "children": null
+                            },
+                            {
+                                "type": "file",
+                                "name": "chat_service.py",
+                                "path": "backend\\models\\chat_service.py",
+                                "children": null
+                            },
+                            {
+                                "type": "file",
+                                "name": "schemas.py",
+                                "path": "backend\\models\\schemas.py",
+                                "children": null
+                            }
+                        ]
+                    },
+                    {
+                        "type": "directory",
+                        "name": "routes",
+                        "path": "backend\\routes",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "__init__.py",
+                                "path": "backend\\routes\\__init__.py",
+                                "children": null
+                            },
+                            {
+                                "type": "file",
+                                "name": "chat.py",
+                                "path": "backend\\routes\\chat.py",
+                                "children": null
+                            },
+                            {
+                                "type": "file",
+                                "name": "documents.py",
+                                "path": "backend\\routes\\documents.py",
+                                "children": null
+                            },
+                            {
+                                "type": "file",
+                                "name": "logger.py",
+                                "path": "backend\\routes\\logger.py",
+                                "children": null
+                            }
+                        ]
+                    },
+                    {
+                        "type": "directory",
+                        "name": "services",
+                        "path": "backend\\services",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "__init__.py",
+                                "path": "backend\\services\\__init__.py",
+                                "children": null
+                            },
+                            {
+                                "type": "file",
+                                "name": "document_service.py",
+                                "path": "backend\\services\\document_service.py",
+                                "children": null
+                            }
+                        ]
+                    },
+                    {
+                        "type": "directory",
+                        "name": "uploads",
+                        "path": "backend\\uploads",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "2af73592-c962-448e-aa22-0d2620c331ce_console-dump.txt",
+                                "path": "backend\\uploads\\2af73592-c962-448e-aa22-0d2620c331ce_console-dump.txt",
+                                "children": null
+                            },
+                            {
+                                "type": "file",
+                                "name": "65592189-56eb-4d89-8e19-4db667f041f0_console-dump.txt",
+                                "path": "backend\\uploads\\65592189-56eb-4d89-8e19-4db667f041f0_console-dump.txt",
+                                "children": null
+                            }
+                        ]
+                    },
+                    {
+                        "type": "directory",
+                        "name": "utils",
+                        "path": "backend\\utils",
+                        "children": [
+                            {
+                                "type": "file",
+                                "name": "__init__.py",
+                                "path": "backend\\utils\\__init__.py",
+                                "children": null
+                            }
+                        ]
+                    },
+                    {
+                        "type": "file",
+                        "name": "Dockerfile",
+                        "path": "backend\\Dockerfile",
+                        "children": null
+                    },
+                    {
+                        "type": "file",
+                        "name": "config.py",
+                        "path": "backend\\config.py",
+                        "children": null
+                    },
+                    {
+                        "type": "file",
+                        "name": "main.py",
+                        "path": "backend\\main.py",
+                        "children": null
+                    },
+                    {
+                        "type": "file",
+                        "name": "requirements.txt",
+                        "path": "backend\\requirements.txt",
+                        "children": null
+                    },
+                    {
+                        "type": "file",
+                        "name": "tree.txt",
+                        "path": "backend\\tree.txt",
+                        "children": null
+                    }
+                ]
+            },
+            {
+                "type": "directory",
+                "name": "public",
+                "path": "public",
+                "children": []
+            },
+            {
+                "type": "directory",
+                "name": "src",
+                "path": "src",
+                "children": [
+                    {
+                        "type": "directory",
+                        "name": "app",
+                        "path": "src\\app",
+                        "children": [
+                            {
+                                "type": "directory",
+                                "name": "api",
+                                "path": "src\\app\\api",
+                                "children": [
+                                    {
+                                        "type": "directory",
+                                        "name": "health",
+                                        "path": "src\\app\\api\\health",
+                                        "children": [
+                                            {
+                                                "type": "file",
+                                                "name": "route.ts",
+                                                "path": "src\\app\\api\\health\\route.ts",
+                                                "children": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "file",
+                                "name": "Providers.tsx",
+                                "path": "src\\app\\Providers.tsx",
+                                "children": null
+                            },
+                            {
+                                "type": "file",
+                                "name": "globals.css",
+                                "path": "src\\app\\globals.css",
+                                "children": null
+                            },
+                            {
+                                "type": "file",
+                                "name": "layout.tsx",
+                                "path": "src\\app\\layout.tsx",
+                                "children": null
+                            },
+                            {
+                                "type": "file",
+                                "name": "page.tsx",
+                                "path": "src\\app\\page.tsx",
+                                "children": null
+                            },
+                            {
+                                "type": "file",
+                                "name": "utils.ts",
+                                "path": "src\\app\\utils.ts",
+                                "children": null
+                            }
+                        ]
+                    },
+                    {
+                        "type": "directory",
+                        "name": "components",
+                        "path": "src\\components",
+                        "children": [
+                            {
+                                "type": "directory",
+                                "name": "feature",
+                                "path": "src\\components\\feature",
+                                "children": [
+                                    {
+                                        "type": "directory",
+                                        "name": "Chat",
+                                        "path": "src\\components\\feature\\Chat",
+                                        "children": [
+                                            {
+                                                "type": "file",
+                                                "name": "ChatContainer.tsx",
+                                                "path": "src\\components\\feature\\Chat\\ChatContainer.tsx",
+                                                "children": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "directory",
+                                        "name": "Document",
+                                        "path": "src\\components\\feature\\Document",
+                                        "children": [
+                                            {
+                                                "type": "file",
+                                                "name": "DocumentSidebar.tsx",
+                                                "path": "src\\components\\feature\\Document\\DocumentSidebar.tsx",
+                                                "children": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "directory",
+                                "name": "layout",
+                                "path": "src\\components\\layout",
+                                "children": [
+                                    {
+                                        "type": "file",
+                                        "name": "AppLayout.tsx",
+                                        "path": "src\\components\\layout\\AppLayout.tsx",
+                                        "children": null
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "directory",
+                                "name": "providers",
+                                "path": "src\\components\\providers",
+                                "children": [
+                                    {
+                                        "type": "file",
+                                        "name": "Providers.tsx",
+                                        "path": "src\\components\\providers\\Providers.tsx",
+                                        "children": null
+                                    },
+                                    {
+                                        "type": "file",
+                                        "name": "index.ts",
+                                        "path": "src\\components\\providers\\index.ts",
+                                        "children": null
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "directory",
+                                "name": "ui",
+                                "path": "src\\components\\ui",
+                                "children": [
+                                    {
+                                        "type": "file",
+                                        "name": "Button.tsx",
+                                        "path": "src\\components\\ui\\Button.tsx",
+                                        "children": null
+                                    },
+                                    {
+                                        "type": "file",
+                                        "name": "Card.tsx",
+                                        "path": "src\\components\\ui\\Card.tsx",
+                                        "children": null
+                                    },
+                                    {
+                                        "type": "file",
+                                        "name": "index.ts",
+                                        "path": "src\\components\\ui\\index.ts",
+                                        "children": null
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "directory",
+                        "name": "lib",
+                        "path": "src\\lib",
+                        "children": [
+                            {
+                                "type": "directory",
+                                "name": "api",
+                                "path": "src\\lib\\api",
+                                "children": [
+                                    {
+                                        "type": "file",
+                                        "name": "client.ts",
+                                        "path": "src\\lib\\api\\client.ts",
+                                        "children": null
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "file",
+                                "name": "utils.ts",
+                                "path": "src\\lib\\utils.ts",
+                                "children": null
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "file",
+                "name": ".dockerignore",
+                "path": ".dockerignore",
+                "children": null
+            },
+            {
+                "type": "file",
+                "name": ".env.local",
+                "path": ".env.local",
+                "children": null
+            },
+            {
+                "type": "file",
+                "name": ".gitignore",
+                "path": ".gitignore",
+                "children": null
+            },
+            {
+                "type": "file",
+                "name": "Dockerfile",
+                "path": "Dockerfile",
+                "children": null
+            },
+            {
+                "type": "file",
+                "name": "Dockerfile.dev",
+                "path": "Dockerfile.dev",
+                "children": null
+            },
+            {
+                "type": "file",
+                "name": "baseui.txt",
+                "path": "baseui.txt",
+                "children": null
+            },
+            {
+                "type": "file",
+                "name": "directory_scanner.py",
+                "path": "directory_scanner.py",
+                "children": null
+            },
+            {
+                "type": "file",
+                "name": "docker-compose.yml",
+                "path": "docker-compose.yml",
+                "children": null
+            },
+            {
+                "type": "file",
+                "name": "huongdan.md",
+                "path": "huongdan.md",
+                "children": null
+            },
+            {
+                "type": "file",
+                "name": "next.config.js",
+                "path": "next.config.js",
+                "children": null
+            },
+            {
+                "type": "file",
+                "name": "package.json",
+                "path": "package.json",
+                "children": null
+            },
+            {
+                "type": "file",
+                "name": "postcss.config.js",
+                "path": "postcss.config.js",
+                "children": null
+            },
+            {
+                "type": "file",
+                "name": "tailwind.config.js",
+                "path": "tailwind.config.js",
+                "children": null
+            },
+            {
+                "type": "file",
+                "name": "tree.txt",
+                "path": "tree.txt",
+                "children": null
+            },
+            {
+                "type": "file",
+                "name": "tree2.txt",
+                "path": "tree2.txt",
+                "children": null
+            },
+            {
+                "type": "file",
+                "name": "tsconfig.json",
+                "path": "tsconfig.json",
+                "children": null
+            }
+        ]
+    }
+}
